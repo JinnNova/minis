@@ -1,7 +1,9 @@
+# Not so useful Python minis by Hanna "Jinn" Enqvist
+
 shakkiRivi = []
 
 ruutuMaaraRows = int(input("Give the number of squares per row: "))
-ruutuMaaraCols = int(input("Give the number of squares per column: ))
+ruutuMaaraCols = int(input("Give the number of squares per column: "))
 
 ruudunKorkeus = int(input("Give the height of one square: "))
 ruudunLeveys = int(input("Give the width of one square: "))

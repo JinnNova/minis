@@ -27,7 +27,5 @@ def drawDiamond(h,s,n):
                 print(rivi.center(h," "), end=" ")
             else:
                 print(rivi.center(h," "))
-
     return
-
 main()

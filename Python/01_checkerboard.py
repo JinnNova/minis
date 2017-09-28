@@ -1,21 +1,21 @@
 shakkiRivi = []
 
-ruutuMaaraRows = int(input())
-ruutuMaaraCols = int(input())
+ruutuMaaraRows = int(input("Give the number of squares per row: "))
+ruutuMaaraCols = int(input("Give the number of squares per column: ))
 
-ruudunKorkeus = int(input())
-ruudunLeveys = int(input())
+ruudunKorkeus = int(input("Give the height of one square: "))
+ruudunLeveys = int(input("Give the width of one square: "))
 
 for r in range(0,ruutuMaaraRows):
     for z in range(0,ruudunKorkeus):
-        #shakkirivi tyhjennetään ennen täyttöä
+        # Emptying the row each time before filling it up with characters
         shakkiRivi = []
         for y in range(0,ruutuMaaraCols):
             for x in range(0,ruudunLeveys):
-                #Jos Rivi = Parillinen ja Ruutu = Parillinen tai Rivi = Pariton ja Ruutu = Pariton
+                # If Row = Even and Squarenumber = Even, OR Row = Odd and Squarenumber = Odd
                 if ((r % 2 == 0 and y % 2 == 0) or (r % 2 != 0 and y % 2 != 0)):
                     shakkiRivi.append(" ")
-                #Jos Rivi = Parillinen ja Ruutu = Pariton, tai Rivi = Pariton ja Ruutu = Parillinen
+                # If Row = Even and Squarenumber = Odd, OR Row = Odd and Squarenumber = Even
                 if ((r % 2 == 0 and y % 2 != 0) or (r % 2 != 0 and y % 2 == 0)):
                     shakkiRivi.append("#")
         for l in shakkiRivi:

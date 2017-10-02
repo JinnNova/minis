@@ -6,23 +6,23 @@ b = int(input("Give number B (which is bigger than A): "))
 c = int(input("Give number C: "))
 d = int(input("Give number D (which is bigger than C): "))
 
-#lasketaan solun maksimikoko, joka on b*d merkkijonon pituus +1
+#For printing purposes: calculating the max size of a cell, which is length of stringed b*d +1
 solunleveys = len(str(b*d))+1 
 
-#taulukon otsikkorivin tulostus
+#Printing the header row of the table first
 print(" " * solunleveys, end="")
 for x in range(a,b+1):
     strX = str(x)
     print(" " * (solunleveys - len(strX)) + strX, end="")
 print()
 
-#Kertotaulun lukujen tulostus
+#Printing rest of the table
 for y in range(c,d+1):
     strY = str(y)
     print(" " * (solunleveys - len(strY)) + strY, end="")
     for z in range(a,b+1):
         strNum = str( y * z )
-        #printataan tarvittava määrä spacea aina ennen lukua
+        # Indenting each number with proper amount of spaces
         print(" " * (solunleveys - len(strNum)) + strNum, end="")
     print()
 

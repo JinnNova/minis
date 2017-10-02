@@ -1,7 +1,10 @@
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
+# Not so useful Python minis by Hanna "Jinn" Enqvist
+# Print a multiplication table from A to B multiplied with numbers from C to D
+
+a = int(input("Give number A: "))
+b = int(input("Give number B (which is bigger than A): "))
+c = int(input("Give number C: "))
+d = int(input("Give number D (which is bigger than C): "))
 
 #lasketaan solun maksimikoko, joka on b*d merkkijonon pituus +1
 solunleveys = len(str(b*d))+1 
@@ -22,3 +25,4 @@ for y in range(c,d+1):
         #printataan tarvittava määrä spacea aina ennen lukua
         print(" " * (solunleveys - len(strNum)) + strNum, end="")
     print()
+
